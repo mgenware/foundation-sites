@@ -52,3 +52,6 @@ pizza/
 data.json
 npm-debug.log
 foundation-docs
+
+/dist/foundation-custom.css
+/dist/foundation-custom.css.map
