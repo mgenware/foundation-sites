@@ -7,6 +7,13 @@
 // Table of Contents
 // Foundation Settings
 
+$mg_mblue: #2c3e50;
+$mg_mlblue: #516273;
+$mg_mgreen: #28c1a3;
+
+$mg_topbar_back: #3C4C5D;
+$mg_topbar_linkHover: #13202D;
+
 // a. Base
 // b. Grid
 // c. Global
@@ -192,7 +199,7 @@ $include-html-global-classes: $include-html-classes;
 // );
 
 // Legacy
-// $small: $small-up;
+// $small: $medium-up;
 // $medium: $medium-up;
 // $large: $large-up;
 
@@ -467,7 +474,7 @@ $include-html-global-classes: $include-html-classes;
 // We use these to control button border styles.
 // $button-border-width: 0;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
+//$button-bg-color: $mg_mlblue;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
@@ -859,7 +866,6 @@ $include-html-global-classes: $include-html-classes;
 
 // Off Canvas Menu Variables
 // $off-canvas-width: rem-calc(250);
-// $off-canvas-height: rem-calc(300);
 // $off-canvas-bg: $oil;
 // $off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%);
 // $off-canvas-bg-active: scale-color($tabbar-bg, $lightness: -30%);
@@ -1405,8 +1411,8 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: $mg_mblue;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: rem-calc(45);
@@ -1422,11 +1428,11 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: rem-calc(16);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-hover: $jet;
-// $topbar-link-bg-color-hover: $charcoal;
+// $topbar-link-bg: $mg_mgreen;
+$topbar-link-bg-hover: $mg_topbar_linkHover;
+//$topbar-link-bg-color-hover: $mg_mgreen;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
@@ -1438,10 +1444,10 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: $oil;
+$topbar-dropdown-bg: $mg_topbar_back;
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
-// $topbar-dropdown-link-bg: $oil;
+// $topbar-dropdown-link-bg: $mg_mlblue;
 // $topbar-dropdown-link-bg-hover: $jet;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
